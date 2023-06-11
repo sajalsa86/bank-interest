@@ -11,18 +11,32 @@
 <body>
 
     <div class="container">
-        <h2>Interest Calculator</h2>
-        <label>Principal Amount:</label>
-        <input type="number" id="principal" placeholder="Enter principal amount">
-        <label>Interest Rate (%):</label>
-        <input type="number" id="interestRate" placeholder="Enter interest rate">
-        <label>Time (in years):</label>
-        <input type="number" id="time" placeholder="Enter time in years">
-        <button onclick="calculateInterest()">Calculate</button>
+        <hgroup>
+            <h1>Islami Bank Bangladesh Ltd</h1>
+
+            <h2>Mudaraba Profit Calculator</h2>
+        </hgroup>
+        <div class="form-group">
+            <label>Principal Amount:</label>
+            <input type="number" id="principal" placeholder="Enter principal amount">
+        </div>
+        <div class="form-group">
+            <label>Interest Rate (%):</label>
+            <input type="number" id="interestRate" placeholder="Enter interest rate">
+        </div>
+        <div class="form-group">
+            <label>Time (in years):</label>
+            <input type="number" id="time" placeholder="Enter time in years">
+        </div>
+        <div class="form-group">
+            <button onclick="calculateInterest()">Calculate</button>
+
+        </div>
         <div class="result">
             <p id="yearlyResult"></p>
             <p id="monthlyResult"></p>
         </div>
+        <p class="style-author">Created by Sajal Hossain</p>
     </div>
 
 
