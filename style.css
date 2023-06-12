@@ -59,12 +59,21 @@
    .result {
        margin-top: 20px;
        font-weight: bold;
+       background-color: grey;
+       color: azure;
+       font-size: 1.2rem;
+       border-radius: 12px;
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+       text-align: center;
+       padding: 10px 0px 10px 0px;
+       border: 10px solid goldenrod;
+
    }
 
    .style-author {
        color: royalblue;
        font-size: 1.1rem;
        text-align: right;
-       padding-top: 50px;
+       padding-top: 30px;
        font-variant: small-caps;
    }

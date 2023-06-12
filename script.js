@@ -6,8 +6,11 @@ function calculateInterest() {
     var yearlyInterest = (principal * interestRate * time) / 100;
     var monthlyInterest = yearlyInterest / 12;
 
-    var yearlyDecreased = yearlyInterest * 0.9;
-    var monthlyDecreased = monthlyInterest * 0.9;
+    // var yearlyDecreased = yearlyInterest * 0.9;
+    // var monthlyDecreased = monthlyInterest * 0.9;
+    //or
+    var yearlyDecreased = yearlyInterest - (yearlyInterest * 0.1);
+    var monthlyDecreased = monthlyInterest - (monthlyInterest * 0.1);
 
     document.getElementById("yearlyResult").innerHTML = "Yearly Interest: Taka " + yearlyInterest.toFixed(2);
     document.getElementById("monthlyResult").innerHTML = "Monthly Interest: Taka " + monthlyInterest.toFixed(2);
