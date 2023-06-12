@@ -12,14 +12,14 @@ function calculateInterest() {
     var yearlyDecreased = yearlyInterest - (yearlyInterest * 0.1);
     var monthlyDecreased = monthlyInterest - (monthlyInterest * 0.1);
 
-    document.getElementById("yearlyResult").innerHTML = "Yearly Interest: Taka " + yearlyInterest.toFixed(2);
-    document.getElementById("monthlyResult").innerHTML = "Monthly Interest: Taka " + monthlyInterest.toFixed(2);
+    document.getElementById("yearlyResult").innerHTML = "Total Profit: Taka " + yearlyInterest.toFixed(2) + " Yearly";
+    document.getElementById("monthlyResult").innerHTML = "Total Profit: Taka " + monthlyInterest.toFixed(2) + " Monthly";
 
     var yearlyDecreasedElement = document.createElement("p");
-    yearlyDecreasedElement.innerHTML = "Yearly Decreased: Taka " + yearlyDecreased.toFixed(2);
+    yearlyDecreasedElement.innerHTML = "Without Govt 10% Vat: Taka " + yearlyDecreased.toFixed(2);
     document.getElementById("yearlyResult").appendChild(yearlyDecreasedElement);
 
     var monthlyDecreasedElement = document.createElement("p");
-    monthlyDecreasedElement.innerHTML = "Monthly Decreased: Taka " + monthlyDecreased.toFixed(2);
+    monthlyDecreasedElement.innerHTML = "Without Govt 10% Vat: Taka " + monthlyDecreased.toFixed(2);
     document.getElementById("monthlyResult").appendChild(monthlyDecreasedElement);
 }
