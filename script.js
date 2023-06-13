@@ -4,8 +4,42 @@ function calculateInterest() {
     var time = document.getElementById("time").value;
 
     var yearlyInterest = (principal * interestRate * time) / 100;
-    var monthlyInterest = yearlyInterest / 12;
+    //var monthlyInterest = yearlyInterest / 12;
+    ////////////////////////////////////////////////////////////
+    let monthlyInterest;
 
+    if (time == 1) {
+        monthlyInterest = yearlyInterest / 12;
+    }
+    else if (time == 2) {
+        monthlyInterest = yearlyInterest / 24;
+    }
+    else if (time == 3) {
+        monthlyInterest = yearlyInterest / 36;
+    }
+    else if (time == 4) {
+        monthlyInterest = yearlyInterest / 48;
+    }
+    else if (time == 5) {
+        monthlyInterest = yearlyInterest / 60;
+    }
+    else if (time == 6) {
+        monthlyInterest = yearlyInterest / 72;
+    }
+    else if (time == 7) {
+        monthlyInterest = yearlyInterest / 84;
+    }
+    else if (time == 8) {
+        monthlyInterest = yearlyInterest / 96;
+    }
+    else if (time == 9) {
+        monthlyInterest = yearlyInterest / 108;
+    }
+    else if (time == 10) {
+        monthlyInterest = yearlyInterest / 120;
+    }
+
+    ////////////////////////////////////////////////////////////
     // var yearlyDecreased = yearlyInterest * 0.9;
     // var monthlyDecreased = monthlyInterest * 0.9;
     //or
